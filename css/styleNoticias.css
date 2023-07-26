@@ -18,7 +18,13 @@
 .menu-lateral li {
   margin-bottom: 10px;
 }
-
+.menu-lateral li:first-child {
+  color: aqua;
+  list-style: none;
+}
+.menu-lateral li:last-child {
+  color: #f1f1f1;
+}
 .main-cointainer {
   align-items: center;
   margin-left: 300px;

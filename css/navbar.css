@@ -26,6 +26,9 @@
 .logo {
   margin-left: 20px;
 }
+.logo:active {
+  background: #fff;
+}
 
 /* Estilo do campo de pesquisa */
 .search-container {
