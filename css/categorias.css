@@ -90,17 +90,6 @@
     justify-content: center;
     text-align: center;
   }
-  
-  .main-cointainer .news {
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 1rem;
-  }
-  .main-cointainer .news li {
-    list-style: none;
-    margin-bottom: 100px;
-  }
-  
   .footer {
     display: flex;
     flex-direction: column;
