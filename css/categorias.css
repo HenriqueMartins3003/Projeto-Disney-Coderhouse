@@ -90,6 +90,11 @@
     justify-content: center;
     text-align: center;
   }
+  .main-cointainer .categorias {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1rem;
+  }
   .footer {
     display: flex;
     flex-direction: column;
