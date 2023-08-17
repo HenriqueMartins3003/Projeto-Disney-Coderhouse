@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
 }
-.container .navbar {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -15,7 +15,7 @@
   height: 10vh;
 }
 
-.logo img {
+.navbar .logo img {
   max-height: 50px;
 }
 
@@ -23,7 +23,7 @@
   background: #fff;
 }
 
-.container .navbar .links a {
+.navbar .links a {
   float: left;
   display: block;
   color: white;
@@ -46,11 +46,8 @@
   margin-top: 4px;
   margin-right: 16px;
   margin-left: 3px;
-  background: #ddd;
-  font-size: 17px;
   border: none;
   cursor: pointer;
-  border-radius: 10px;
 }
 
 .headLine {
@@ -78,10 +75,10 @@
   text-transform: uppercase;
   size: 20px;
 }
-.categorias {
+.main-cointainer .menu-lateral .categorias {
   margin-bottom: 3rem;
 }
-.acessados {
+.main-cointainer .menu-lateral .acessados {
   margin-bottom: 2rem;
 }
 .main-cointainer .menu-lateral li {
