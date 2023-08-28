@@ -6,17 +6,15 @@
 .container {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   background-color: #424dab;
-  height: 10vh;
+  width: 100%;
 }
 
 .navbar .logo img {
-  max-height: 50px;
+  max-height: 10vh;
 }
 
 .logo:active {
@@ -58,16 +56,16 @@
 
 .main-cointainer {
   display: flex;
-  height: 70vh;
+  height: 73vh;
   width: 100vh;
   justify-content: left;
 }
 
 .main-cointainer .menu-lateral {
-  width: 250px;
   margin-left: 1rem;
   background-color: #ddd;
   width: 30vh;
+  height: 73vh;
 }
 .main-cointainer .menu-lateral p {
   padding: 10px 0;
@@ -105,12 +103,12 @@
   width: 100%;
   margin-bottom: 0.5rem;
 }
-.footer h2 {
-  margin: 2rem;
+.footer h3 {
+  margin: 1rem;
   text-align: center;
 }
 .footer .movie-container {
   display: flex;
   justify-content: space-between;
-  margin: 0 1rem;
+  margin-bottom: 10px;
 }
