@@ -29,23 +29,7 @@
     <title>Noticias</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <!-- <div class="navbar">
-        <div class="logo">
-          <img src="../public/logo_disney.png" alt="Logo da Disney" />
-        </div>
-        <div class="links">
-          <a href="../index.html">Home</a>
-          <a href="./contato.html">Contato</a>
-          <a href="./noticias.html">Novidades</a>
-          <a href="./personagens.html">Personagens</a>
-          <a href="./sobreNos.html">Sobre nós</a>
-        </div>
-        <div class="search-container">
-          <input type="text" placeholder="Pesquisar..." />
-          <button type="submit" class="btn btn-light">Buscar</button>
-        </div>
-      </div> -->
+    <section class="wrapper">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="logo">
           <img
@@ -60,14 +44,14 @@
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <ul class="nav-item">
+              <li class="nav-item">
                 <a
                   class="nav-link active"
                   aria-current="page"
                   href="../index.html"
                   >Home</a
                 >
-              </ul>
+              </li>
 
               <li class="nav-item">
                 <a
@@ -105,44 +89,52 @@
                 >
               </li>
             </ul>
-            <form class="d-flex">
+            <form class="d-flex" id="searchForm">
               <input
+                id="searchInput"
                 class="form-control me-2"
                 type="search"
                 placeholder="Pesquisar..."
                 aria-label="Pesquisar"
               />
-              <button class="btn btn-light" type="submit">Pesquisar</button>
+              <button class="btn btn-light" id="btnSearch" type="submit">
+                Pesquisar
+              </button>
             </form>
           </div>
         </div>
       </nav>
 
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeModal">&times;</span>
+          <div id="searchResults"></div>
+        </div>
+      </div>
+
       <div class="headLine">
         <h1 class="display-3">Confira as últimas novidades sobra a disney</h1>
       </div>
-      <div class="main-cointainer">
-        <div class="menu-lateral">
-          <aside>
-            <p>Categorias</p>
-            <ul class="categorias">
-              <li>Marvel</li>
-              <li>Pixar</li>
-              <li>Classicos</li>
-              <li>Ficção Cientifica</li>
-            </ul>
+      <section class="main-cointainer">
+        <aside class="menu-lateral">
+          <ul class="categorias">
+            <li>Categorias</li>
+            <li>Marvel</li>
+            <li>Pixar</li>
+            <li>Classicos</li>
+            <li>Ficção Cientifica</li>
+          </ul>
 
-            <p>Os mais acessados</p>
-            <ul class="acessados">
-              <li>Malévola</li>
-              <li>Woody</li>
-              <li>Sulivan</li>
-              <li>Big Hero</li>
-              <li>Thor</li>
-              <li>Cinderela</li>
-            </ul>
-          </aside>
-        </div>
+          <ul class="acessados">
+            <li>Os mais acessados</li>
+            <li>Malévola</li>
+            <li>Woody</li>
+            <li>Sulivan</li>
+            <li>Big Hero</li>
+            <li>Thor</li>
+            <li>Cinderela</li>
+          </ul>
+        </aside>
         <div class="news">
           <ul>
             <li>
@@ -163,13 +155,14 @@
             </li>
           </ul>
         </div>
-      </div>
+      </section>
 
-      <div class="footer">
+      <section class="footer">
         <h3 class="display-5">Próximos lançamentos da disney no cinema</h3>
-        <div class="movie-container">
+        <div class="movie-container" id="movie-container">
           <iframe
-            width="200"
+            id="videoFrame1"
+            width="300"
             height="200"
             src="https://www.youtube.com/embed/SOP5v53DD74"
             title="YouTube video player"
@@ -178,7 +171,8 @@
             allowfullscreen
           ></iframe>
           <iframe
-            width="200"
+            id="videoFrame2"
+            width="300"
             height="200"
             src="https://www.youtube.com/embed/SOP5v53DD74"
             title="YouTube video player"
@@ -187,7 +181,8 @@
             allowfullscreen
           ></iframe>
           <iframe
-            width="200"
+            id="videoFrame3"
+            width="300"
             height="200"
             src="https://www.youtube.com/embed/SOP5v53DD74"
             title="YouTube video player"
@@ -196,7 +191,8 @@
             allowfullscreen
           ></iframe>
           <iframe
-            width="200"
+            id="videoFrame4"
+            width="290"
             height="200"
             src="https://www.youtube.com/embed/SOP5v53DD74"
             title="YouTube video player"
@@ -205,7 +201,8 @@
             allowfullscreen
           ></iframe>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
+    <script src="../Js/NoticiasJS.js"></script>
   </body>
 </html>
