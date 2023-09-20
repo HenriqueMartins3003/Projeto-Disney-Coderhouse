@@ -96,10 +96,10 @@
     background-color: #fff;
     padding: 20px;
     box-sizing: border-box;
-    justify-content: space-between;
   }
   .news li {
-    list-style: none;
+    list-style: lower-roman;
+    padding-top: 20px;
   }
 
   @media (max-width: 768px) {
