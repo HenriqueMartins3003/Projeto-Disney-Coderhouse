@@ -35,7 +35,7 @@ nav ul {
 form {
   border: 1px solid black; 
   padding: 20px; 
-  margin: auto; 
+  margin: 3px auto; 
   max-width: 900px;
 }
     
@@ -44,9 +44,15 @@ form {
   text-align: center;
 }
 
+.andsajd{
+  text-align: right;
+  margin: 2.5px;
+}
+
 .carousel-inner{
-  max-width: 1500px;
+  max-width: 1340px;
   max-height: 590px;
+  margin: 5px;
 }
 
 .search {
