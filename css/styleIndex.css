@@ -76,17 +76,15 @@
     border: 0.5px solid black;
     background-color: #d5d3d3;
     border-radius: 10px;
-    height: 46vh;
+    height: 70vh;
     margin-left: 10rem;
   }
 
-  .main-cointainer > .about > .about-content {
+  .about-content {
     padding: 10px;
     box-sizing: border-box;
-  }
-
-  .space {
-    grid-area: space;
+    font-weight: 300;
+    line-height: 1.6em;
   }
 
   .categorias,
@@ -105,9 +103,23 @@
     padding-bottom: 5px;
   }
 
+  /* Estilos para telas menores que 768px de largura */
   @media (max-width: 768px) {
     .main-cointainer {
-      flex-direction: column;
+      grid-template-columns: 1fr; /* Uma única coluna para telas menores */
+      grid-template-areas:
+        "menu"
+        "trailer"
+        "about"; /* Reorganiza as áreas no layout */
+    }
+    .about-content {
+      font-size: 14px;
+      line-height: 1.4em;
+    }
+
+    .main-cointainer > .movie-trailer,
+    .main-cointainer > .about {
+      margin-left: 0; /* Remove a margem no lado esquerdo */
     }
   }
 }
@@ -152,7 +164,7 @@
   }
 
   .container-character-image {
-    background-color: #272390;
+    background-color: #424dab;
     padding: 0.5em;
     height: 9.5em;
     width: 9.5em;
@@ -171,7 +183,7 @@
   .character-name {
     padding: 0.5em 0 0.8em 0;
     text-align: center;
-    color: blueviolet;
+    color: #424dab;
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 600;
@@ -181,6 +193,28 @@
     color: #3a3939;
     font-weight: 300;
     line-height: 2em;
+  }
+
+  /* Estilos para telas menores que 768px de largura */
+  @media (max-width: 768px) {
+    .character-container {
+      width: 90%; /* Restaura a largura para telas menores */
+      padding: 2em; /* Restaura o preenchimento para telas menores */
+    }
+
+    .input-container {
+      grid-template-columns: 1fr; /* Uma única coluna para telas menores */
+    }
+
+    .container-character-image {
+      height: 9em; /* Ajusta a altura para telas menores */
+      width: 9em; /* Ajusta a largura para telas menores */
+    }
+
+    .container-character-image img {
+      width: 8.5em; /* Ajusta o tamanho da imagem para telas menores */
+      height: 8.5em;
+    }
   }
 }
 
@@ -202,7 +236,6 @@
     left: 0;
     width: 20%;
     height: 20%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
     justify-content: center;
     align-items: center;
     z-index: 10; /* Garante que o pop-up fique sobre o conteúdo */

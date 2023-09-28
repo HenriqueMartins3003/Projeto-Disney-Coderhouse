@@ -9,7 +9,9 @@ const listContainer = document.querySelector(".list");
 const btnSubmitForm = document.getElementById("btnSubmit");
 const emailForm = document.getElementById("emailForm");
 const nomeForm = document.getElementById("nameForm");
-const popUp = document.getElementById("myModal");
+const divPopUp = document.getElementById("myModal");
+const popUp = document.getElementById("modal-content");
+const closeBtn = document.getElementById("close-button");
 
 //function personagens
 button.addEventListener(
@@ -45,19 +47,27 @@ window.onload = () => {
 
 btnSubmitForm.addEventListener("click", (event) => {
   event.preventDefault();
+
+  console.log("1");
   if (!nomeForm.value.length && !emailForm.value.length) {
     const message = document.createElement("p");
     message.innerText = "Nome ou Endereço de Email invalidos!";
     popUp.appendChild(message);
-    popUp.style.display = "block";
+    divPopUp.style.display = "block";
     return;
   }
+  console.log("2");
   const message = document.createElement("p");
   message.innerText = `Parabens ${nomeForm.value} você cadastrou o email: ${emailForm.value} na nossa Newsletter`;
+  console.log(message);
   popUp.appendChild(message);
-  popUp.style.display = "block";
+  divPopUp.style.display = "block";
 });
 
 function closePopUp() {
   popUp.style.display = "none";
 }
+
+closeBtn.addEventListener("click", () => {
+  closePopUp();
+});
