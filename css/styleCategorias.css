@@ -56,50 +56,30 @@
     padding: 20px;
     box-sizing: border-box;
   }
-  .headLine {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .main-cointainer {
+  .categorias-de-personagens {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   .menu-lateral {
-    flex: 1;
-    max-width: 300px;
+    flex: column;
+    max-width: 200px;
     background-color: #f2f2f2;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin-left: 10px;
-  }
-  .categorias,
-  .acessados {
     list-style: none;
-    padding: 0;
   }
-  .categorias :nth-child(1) {
-    text-transform: uppercase;
-    font-size: large;
-    padding-bottom: 5px;
-  }
-  .acessados :nth-child(1) {
-    text-transform: uppercase;
-    font-size: large;
-    padding-bottom: 5px;
-  }
-  .categorias {
-    flex: 2;
-    background-color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-    justify-content: space-between;
-  }
-  .categorias li {
+}
+  .categorias-lateral {
+    background-color: #f2f2f2;
     list-style: none;
-    list-style: lower-roman;
-    padding-top: 20px;
+  }
+
+  .acessados-lateral {
+    list-style: none;
+    background-color: #f2f2f2;
+  }
+
+  .disney-borda {
+    border-radius: 200px;
   }
 
   @media (max-width: 768px) {
@@ -107,7 +87,6 @@
       flex-direction: column;
     }
   }
-}
 @layer footer {
   .footer {
     display: grid;
