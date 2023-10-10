@@ -21,7 +21,7 @@ button.addEventListener(
       alert("O campo de pesquisa não pode ficar vazio!");
     }
     showContainer.innerHTML = "";
-    const url = `http://gateway.marvel.com/v1/public/characters?ts=1695869773587&apikey=d67e46f5b331b89af57362e8d0316c90&hash=e3962b05f275713ac68269a9cda8c93e&nameStartsWith=${input.value}`;
+    const url = `http://gateway.marvel.com/v1/public/characters?ts=1695869773587&apikey=d67e46f5b331b89af57362e8d0316c90&hash=e3962b05f275713ac68269a9cda8c93e&name=${input.value}`;
 
     const response = await fetch(url);
     const jsonData = await response.json();
@@ -48,7 +48,6 @@ window.onload = () => {
 btnSubmitForm.addEventListener("click", (event) => {
   event.preventDefault();
 
-  console.log("1");
   if (!nomeForm.value.length && !emailForm.value.length) {
     const message = document.createElement("p");
     message.innerText = "Nome ou Endereço de Email invalidos!";
