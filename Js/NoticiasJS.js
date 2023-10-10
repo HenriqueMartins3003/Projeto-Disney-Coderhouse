@@ -14,10 +14,10 @@ const createNewsList = async () => {
   for (let i = 0; i < 4; i++) {
     const content = news[i].content;
     const bulletPoint = document.createElement("li");
-    console.log(content);
-    console.log(bulletPoint);
+    const space = document.createElement("br");
     bulletPoint.innerText = content;
     ulPoint.appendChild(bulletPoint);
+    ulPoint.appendChild(space);
   }
 };
 
