@@ -4,13 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../public/disney.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/personagens.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="../css/stylepersonagens.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Personagens</title>
   </head>
   <body>
@@ -29,33 +24,18 @@
         </div>
       -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"
-          ><img
-            class="logo"
-            src="../public/logo_disney.png"
-            alt="Logo da Disney"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#conteudoNavbarSuportado"
-          aria-controls="conteudoNavbarSuportado"
-          aria-expanded="false"
-          aria-label="Alterna navegação"
-        >
+        <a class="navbar-brand" href="#"><img class="logo" src="../public/logo_disney.png" alt="Logo da Disney" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+      
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(página atual)</span></a
-              >
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(página atual)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contato.html">Contato</a>
+              <a class="nav-link" href="../index.html">Sobre nós</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./noticias.html">Novidades</a>
@@ -64,32 +44,25 @@
               <a class="nav-link" href="./personagens.html">Personagens</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./favoritos.html">Favoritos</a>
+              <a class="nav-link" href="./contato.html">Contato</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Pesquisar"
-              aria-label="Pesquisar"
-            />
-            <button class="btn btn-outline-default my-2 my-sm-0" type="submit">
-              Pesquisar
-            </button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-default my-2 my-sm-0" type="submit">Pesquisar</button>
           </form>
         </div>
       </nav>
       <div class="main-cointainer">
         <aside class="menu-lateral">
-          <h3>Categorias</h3>
+          <h4>Categorias</h4>
           <ul class="categorias">
             <li>Marvel</li>
             <li>Pixar</li>
             <li>Classicos</li>
             <li>Ficção Cientifica</li>
           </ul>
-          <h3>Os mais acessados</h3>
+          <h4>Os mais acessados</h4>
           <ul class="acessados">
             <li>Malévola</li>
             <li>Woody</li>
@@ -99,53 +72,55 @@
             <li>Cinderela</li>
           </ul>
         </aside>
-        <section class="news">
-          <article>
-            <h2>APRESENTAÇÃO</h2>
-            <p>
-              Nome: Nemo Ano: 2023 Gênero: Masculino Filme: Procurando Nemo
-              Descrição: A história se passa em um mundo onde um
-              peixe-palhaço<br />
-              superprotetor chamado Marlin (voz de Albert Brooks), junto com
-              uma<br />
-              cirurgiã-patela chamada Dory (voz de Ellen DeGeneres), procura por
-              seu filho desaparecido,<br />
-              Nemo (voz de Alexander Gould). Ao longo do caminho, Marlin aprende
-              a correr riscos e aceita<br />
-              que Nemo tem condições de cuidar de si mesmo.
-            </p>
-          </article>
+        <section class="news" id="apresentacao">
         </section>
         <section>
           <article>
-            <aside class="image">
-              <a
-                href="https://static.wikia.nocookie.net/disney/images/f/f2/Profile_-_Nemo.jpg/revision/latest/thumbnail/width/360/height/360?cb=20190529221404"
-              >
-                <img
-                  src="https://static.wikia.nocookie.net/disney/images/f/f2/Profile_-_Nemo.jpg/revision/latest/thumbnail/width/360/height/360?cb=20190529221404"
-                  alt="nemo"
-                />
-              </a>
+            <aside class="image" id="image">
             </aside>
+          </article>
+        </section>
+        <section class="descript">
+          <article>
+              <h5>Características do personagem</h5>
+              <ul class="personalidade">
+                <ol>Corajoso</ol>
+                <ol>Curioso</ol>
+                <ol>Ousado</ol>
+                <ol>Destemido</ol>
+                <ol>Inovador</ol>
+                <ol>Teimoso</ol>
+              </ul>
           </article>
         </section>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <div class="div-container">
+      <div></div>
+      <section class="peixe" id="sobre">
+        <article>
+          <h5>SOBRE O PERSONAGEM</h5>
+          <p>Nemo é colocado num aquário no consultório de um dentista e lá encontra uma turma de animais marinhos, liderada por Guelra, um moorish idol. Nemo descobre que será dado à sobrinha do dentista, Darla, matadora de peixes. Guelra tem um plano de fuga: obstruir o filtro do aquário, para que o dentista precise limpar o recipiente e os transfira para sacos plásticos, para que assim eles se atirem pela janela e caiam no porto-seguro. Nemo tenta bloquear o filtro com um seixo, mas o plano não dá certo.</p>
+        </article>
+      </section>
+    </div>
+      <section class="outros-personagens">
+        <article>
+          <h3>CONHEÇA OUTROS PERSONAGENS DA DISNEY</h3>
+        </article>
+      </section>
+      <div class="segundo-conteudo">
+        <aside class="fotos">
+          <img class="imagem" src="../imagens/nemo.jpg" alt="nemo" onclick="exibePersonagens(0)"/>
+          <img class="imagem" src="../imagens/disney classicos.png" alt="ariel" onclick="exibePersonagens(1)"/>
+          <img class="imagem" src="../imagens/pixar.png" alt="woody" onclick="exibePersonagens(2)"/>
+          <img class="imagem" src="../imagens/marvel.png" alt="homem-aranha" onclick="exibePersonagens(3)"/>
+          <img class="imagem" src="../imagens/star wars.png" alt="darth" onclick="exibePersonagens(4)"/>
+        </aside>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../Js/personagens.js"></script>
+</body>
 </html>

@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.container .navbar {
+  background-color: #424dab !important;
+}
+
+.logo {
+  max-height: 50px;
+}
+
+.logo:active {
+  background: #fff;
+}
+
+.container .navbar .nav-link {
+  color: white !important; 
+}
+
+.main-cointainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.main-cointainer .menu-lateral {
+  margin-bottom: 50px;
+  background-color: #ddd;
+  padding: 10px 20px;
+}
+
+.main-cointainer .menu-lateral li {
+  margin-bottom: 10px;
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+}
+
+.news {
+  padding: 10px 20px;
+}
+
+.news article {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.image-nemo {
+  align-items: center;
+  padding: 10px 10px;
+  width: 80%;
+}
+
+.descript {
+  background-color: #ddd;
+  padding: 10px 20px;
+}
+
+.descript .personalidade ol {
+  margin-bottom: 10px;
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+}
+
+.div-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #b6b9d3;
+}
+
+.peixe article {
+  justify-content: center;
+  padding: 20px;
+  background-color: #b6b9d3;
+}
+
+.outros-personagens {
+  text-align: center;
+  padding: 20px;
+  background-color: #b6b9d3;
+}
+
+.fotos {
+  display: flex;
+  justify-content: center;
+  background-color: #b6b9d3;
+}
+
+.imagem {
+  padding: 10px 10px;
+  width: 200px;
+}
+
+
