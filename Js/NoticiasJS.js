@@ -9,7 +9,6 @@ const findNewsApi = async () => {
 const createNewsList = async () => {
   const news = await findNewsApi();
   const ulPoint = document.getElementById("listaNoticias");
-  console.log(ulPoint);
 
   for (let i = 0; i < 4; i++) {
     const content = news[i].content;

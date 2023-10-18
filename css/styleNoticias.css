@@ -1,3 +1,11 @@
+@layer wrapper {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+}
 @layer navBar {
   .navbar {
     background-color: #424dab;
@@ -6,19 +14,20 @@
 
   .navbar .logo img {
     max-height: 10vh;
+    padding-left: 10px;
   }
 
   .logo:active {
     background: #fff;
   }
 
-  .navbar .links a {
+  /* .navbar .links a {
     display: block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    text-align: justify;
+    padding: 16px;
     text-decoration: none;
-  }
+  } */
 
   .search-container input[type="text"] {
     padding: 6px;
@@ -40,14 +49,6 @@
 }
 
 @layer main-Content {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
   .headLine {
     text-align: center;
     margin-bottom: 20px;
